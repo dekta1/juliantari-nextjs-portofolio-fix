@@ -6,10 +6,10 @@ const nextConfig = {
         'react-icons/md': 'react-icons/lib/md',
         'react-icons/fa': 'react-icons/lib/fa',
       };
-    //   config.module.rules.push({
-    //     test: /\.css$/,
-    //     use: ['css-loader'],
-    //   });
+      config.module.rules.push({
+        test: /\.css$/,
+        use: ['sass-loader'],
+      });
       return config;
     },
   }
