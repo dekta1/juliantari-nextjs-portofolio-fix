@@ -1,6 +1,5 @@
 'use client'
 import React, { useState } from 'react';
-import { FaBars, FaTimes } from "react-icons/fa";
 import {Link} from "react-scroll/modules";
 import Home from '../../components/Home';
 import About from '../../components/About';
@@ -60,30 +59,7 @@ const NavBar = () => {
             ))}
  
         </ul>
-        <div onClick={() => setNav(!nav) }  className="cursor-pointer pr-4 z-10 text-white md:hidden">
         
-        {nav ? <FaTimes size={30} /> : <FaBars size={30}  />}
-        </div>
-        {nav && (
-           
-           <ul className="flex flex-col justify-center items-center
-        absolute top-0 left-0 w-full h-screen bg-gradient-to-b
-        from-gray-950 to-gray-800 text-gray-500">
-
-        {links.map(({id, link}) => 
-            (<li
-                key={id} 
-                className="px-4 cursor-pointer capitalize py-6 text-3xl hover:bg-gray-500 text-white">
-                   <Link onClick={() => setNav (!nav) }
-                   to={link} smooth duration={500}>
-                    {link}
-                    </Link>
-                   
-            </li>
-   
-            ))}   
-            </ul>
-        )}
     </div>
     <Home></Home>
     <About></About>

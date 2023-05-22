@@ -1,5 +1,4 @@
 import React from 'react';
-import {MdKeyboardArrowRight} from "react-icons/md";
 import {Link} from "react-scroll/modules";
 import { url } from 'inspector';
 import Image from 'next/image';
@@ -27,8 +26,7 @@ function Home ()  {
                      to-blue-500 cursor-pointer
                         ">
                             Contact
-                            <span className="group-hover:rotate-90 duration ml-1">
-                            <MdKeyboardArrowRight size={25} /> 
+                            <span className="group-hover:rotate-90 duration ml-1"> 
                             </span>
                         </button>
                     </Link>
