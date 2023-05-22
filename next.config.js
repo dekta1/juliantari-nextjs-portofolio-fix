@@ -8,17 +8,7 @@ const nextConfig = {
       };
       config.module.rules.push({
         test: /\.css$/,
-        use: [
-          {
-            loader: 'style-loader',
-          },
-          {
-            loader: 'css-loader',
-            options: {
-              importLoaders: 1,
-            },
-          },
-        ],
+        use: ['css-loader'],
       });
       return config;
     },
