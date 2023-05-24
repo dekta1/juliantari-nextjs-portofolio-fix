@@ -8,7 +8,7 @@ const nextConfig = {
       };
       config.module.rules.push({
         test: /\.css$/,
-        use: ['sass-loader'],
+        use: ['css-loader'],
       });
       return config;
     },
